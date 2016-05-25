@@ -1,5 +1,10 @@
-Packer template for an EC2 AMI to be used by all web nodes
+Packer template to create an AMI used by all web nodes.
 =============
+
+###Provisioning
+* Installs Docker Engine
+* Downloads [Docker Swarm image](https://hub.docker.com/_/swarm/)
+* Downloads [Registrator](https://hub.docker.com/r/gliderlabs/registrator/)
 
 Install [Packer](https://www.packer.io/) and add it to your PATH.
 
