@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-sudo apt-get update
-
 # This downloads and installs Docker Engine
 wget -qO- https://get.docker.com/ | sh
 
@@ -12,4 +10,4 @@ sudo docker pull swarm
 sudo docker pull gliderlabs/registrator
 
 # Add ubuntu user to docker group
-sudo usermod –aG docker ubuntu
+sudo usermod -G docker ubuntu
