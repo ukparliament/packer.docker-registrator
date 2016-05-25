@@ -5,10 +5,17 @@ Packer template to create an AMI used by all web nodes.
 * Installs Docker Engine
 * Downloads [Docker Swarm image](https://hub.docker.com/_/swarm/)
 * Downloads [Registrator](https://hub.docker.com/r/gliderlabs/registrator/)
+* Added the Ubuntu user to the Docker group
 
 Install [Packer](https://www.packer.io/) and add it to your PATH.
 
 Create your Docker Web AMI in AWS, using your access and secret keys.
+
+```
+make ami
+```
+
+OR
 
 ```
 packer build \
@@ -17,7 +24,7 @@ packer build \
   template.json
 ```
 
-Or
+OR
 
 ```
 packer build -var-file='packer_vars.json' template.json
