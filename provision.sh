@@ -10,3 +10,6 @@ sudo docker pull swarm
 
 # This pulls registrator image from https://hub.docker.com/r/gliderlabs/registrator/
 sudo docker pull gliderlabs/registrator
+
+# Add ubuntu user to docker group
+sudo usermod –aG docker ubuntu
